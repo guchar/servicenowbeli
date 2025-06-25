@@ -158,41 +158,7 @@ export default function StatsPage() {
               </Card>
             </div>
 
-            {/* Top Reviewers Leaderboard */}
-            <div className="mt-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Top Reviewers (Today)</CardTitle>
-                  <CardDescription>
-                    Most active reviewers across all cafeterias
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Podium
-                    reviewers={[
-                      {
-                        name: "Emily R.",
-                        reviews: 15,
-                        avatar:
-                          "https://randomuser.me/api/portraits/women/44.jpg",
-                      },
-                      {
-                        name: "Daniel K.",
-                        reviews: 12,
-                        avatar:
-                          "https://randomuser.me/api/portraits/men/32.jpg",
-                      },
-                      {
-                        name: "Sophia L.",
-                        reviews: 10,
-                        avatar:
-                          "https://randomuser.me/api/portraits/women/68.jpg",
-                      },
-                    ]}
-                  />
-                </CardContent>
-              </Card>
-            </div>
+            {/* Daily top reviewers leaderboard removed per updated requirements */}
           </TabsContent>
 
           <TabsContent value="weekly">
@@ -324,41 +290,7 @@ export default function StatsPage() {
               </Card>
             </div>
 
-            {/* Top Reviewers Leaderboard */}
-            <div className="mt-8">
-              <Card>
-                <CardHeader>
-                  <CardTitle>Top Reviewers (This Week)</CardTitle>
-                  <CardDescription>
-                    Most active reviewers across all cafeterias
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Podium
-                    reviewers={[
-                      {
-                        name: "Emily R.",
-                        reviews: 30,
-                        avatar:
-                          "https://randomuser.me/api/portraits/women/44.jpg",
-                      },
-                      {
-                        name: "Daniel K.",
-                        reviews: 27,
-                        avatar:
-                          "https://randomuser.me/api/portraits/men/32.jpg",
-                      },
-                      {
-                        name: "Sophia L.",
-                        reviews: 21,
-                        avatar:
-                          "https://randomuser.me/api/portraits/women/68.jpg",
-                      },
-                    ]}
-                  />
-                </CardContent>
-              </Card>
-            </div>
+            {/* Weekly top reviewers leaderboard removed per updated requirements */}
           </TabsContent>
 
           <TabsContent value="monthly">
@@ -504,19 +436,19 @@ export default function StatsPage() {
                     reviewers={[
                       {
                         name: "Emily R.",
-                        reviews: 42,
+                        reviews: 29,
                         avatar:
                           "https://randomuser.me/api/portraits/women/44.jpg",
                       },
                       {
                         name: "Daniel K.",
-                        reviews: 35,
+                        reviews: 25,
                         avatar:
                           "https://randomuser.me/api/portraits/men/32.jpg",
                       },
                       {
                         name: "Sophia L.",
-                        reviews: 30,
+                        reviews: 22,
                         avatar:
                           "https://randomuser.me/api/portraits/women/68.jpg",
                       },
