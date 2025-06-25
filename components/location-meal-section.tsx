@@ -29,15 +29,23 @@ interface Meal {
 interface LocationMealSectionProps {
   location: string;
   meals: Meal[];
+  waitTime?: string;
 }
 
 export function LocationMealSection({
   location,
   meals,
+  waitTime,
 }: LocationMealSectionProps) {
   return (
     <div>
-      <h2 className="text-2xl font-semibold mb-4 text-[#0b7cce]">{location}</h2>
+      <h2 className="text-2xl font-semibold mb-2 text-[#0b7cce]">{location}</h2>
+      {waitTime && (
+        <p className="mb-4 text-sm text-muted-foreground">
+          Estimated wait time:{" "}
+          <span className="font-medium text-gray-800">{waitTime}</span>
+        </p>
+      )}
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {meals.map((meal) => (
           <FoodCardWithNutrition

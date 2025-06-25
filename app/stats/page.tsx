@@ -711,7 +711,7 @@ function PodiumColumn({
         alt={reviewer.name}
         width={48}
         height={48}
-        className="rounded-full -mt-6 border-2 border-white shadow"
+        className="rounded-full mt-2 border-2 border-white shadow"
       />
       <span className="mt-2 text-sm font-medium text-center">
         {reviewer.name}

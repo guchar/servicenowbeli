@@ -54,19 +54,22 @@ export default function Home() {
         {
           id: "1",
           name: "Alex Johnson",
-          avatar: "/placeholder-user.jpg",
+          avatar:
+            "https://t4.ftcdn.net/jpg/04/80/05/77/360_F_480057743_J7wTBWRW3vABPnqEv2IwSVVXjj50xevN.jpg",
           rating: 5,
         },
         {
           id: "2",
           name: "Sam Taylor",
-          avatar: "/placeholder-user.jpg",
+          avatar:
+            "https://media.istockphoto.com/id/1450340623/photo/portrait-of-successful-mature-boss-senior-businessman-in-glasses-asian-looking-at-camera-and.jpg?s=612x612&w=0&k=20&c=f0EqWiUuID5VB_NxBUEDn92W2HLENR15CFFPzr-I4XE=",
           rating: 4,
         },
         {
           id: "3",
           name: "Jordan Lee",
-          avatar: "/placeholder-user.jpg",
+          avatar:
+            "https://t3.ftcdn.net/jpg/00/14/82/18/360_F_14821833_GovIKgFi4F7E9hO369DuSoS1S30k1Hf7.jpg",
           rating: 5,
         },
         {
@@ -272,10 +275,12 @@ export default function Home() {
             <LocationMealSection
               location="Building G - Connection Cafe"
               meals={connectionCafeMeals}
+              waitTime="8 min"
             />
             <LocationMealSection
               location="Galley Kitchen - Building C"
               meals={galleyKitchenMeals}
+              waitTime="4 min"
             />
           </TabsContent>
 
@@ -283,6 +288,7 @@ export default function Home() {
             <LocationMealSection
               location="Building G - Connection Cafe"
               meals={connectionCafeMeals}
+              waitTime="8 min"
             />
           </TabsContent>
 
@@ -290,6 +296,7 @@ export default function Home() {
             <LocationMealSection
               location="Galley Kitchen - Building C"
               meals={galleyKitchenMeals}
+              waitTime="4 min"
             />
           </TabsContent>
         </Tabs>
@@ -304,7 +311,8 @@ export default function Home() {
                     id: "1",
                     user: {
                       name: "Alex Johnson",
-                      avatar: "/placeholder-user.jpg",
+                      avatar:
+                        "https://t4.ftcdn.net/jpg/04/80/05/77/360_F_480057743_J7wTBWRW3vABPnqEv2IwSVVXjj50xevN.jpg",
                       department: "Engineering",
                     },
                     time: "15 minutes ago",
@@ -324,7 +332,8 @@ export default function Home() {
                     id: "2",
                     user: {
                       name: "Sam Taylor",
-                      avatar: "/placeholder-user.jpg",
+                      avatar:
+                        "https://media.istockphoto.com/id/1450340623/photo/portrait-of-successful-mature-boss-senior-businessman-in-glasses-asian-looking-at-camera-and.jpg?s=612x612&w=0&k=20&c=f0EqWiUuID5VB_NxBUEDn92W2HLENR15CFFPzr-I4XE=",
                       department: "Product",
                     },
                     time: "1 hour ago",
@@ -344,7 +353,8 @@ export default function Home() {
                     id: "3",
                     user: {
                       name: "Jordan Lee",
-                      avatar: "/placeholder-user.jpg",
+                      avatar:
+                        "https://t3.ftcdn.net/jpg/00/14/82/18/360_F_14821833_GovIKgFi4F7E9hO369DuSoS1S30k1Hf7.jpg",
                       department: "Marketing",
                     },
                     time: "2 hours ago",

@@ -22,8 +22,7 @@ export function FoodAssistantWidget() {
     {
       id: "welcome",
       sender: "bot",
-      content:
-        "Hi! I'm your Food Assistant. Ask me for sweet, savory, or healthy options!",
+      content: "Hi! I'm NomNow. Ask me for sweet, savory, or healthy options!",
       time: new Date(),
     },
   ]);
@@ -89,13 +88,13 @@ export function FoodAssistantWidget() {
             <div className="flex items-center gap-2">
               <Image
                 src={ASSISTANT_LOGO}
-                alt="Food Assistant Logo"
+                alt="NomNow Logo"
                 width={20}
                 height={20}
                 className="rounded-full object-cover"
                 unoptimized
               />
-              <span className="font-medium text-xs">Food Assistant</span>
+              <span className="font-medium text-xs">NomNow</span>
             </div>
             <button
               onClick={() => setOpen(false)}
@@ -170,12 +169,12 @@ export function FoodAssistantWidget() {
       {!open && (
         <button
           onClick={() => setOpen(true)}
-          aria-label="Open Food Assistant"
+          aria-label="Open NomNow"
           className="fixed bottom-4 right-4 z-50 bg-[#0b7cce] hover:bg-[#0b7cce]/90 rounded-full w-12 h-12 flex items-center justify-center shadow-lg"
         >
           <Image
             src={ASSISTANT_LOGO}
-            alt="Food Assistant Logo"
+            alt="NomNow Logo"
             width={24}
             height={24}
             className="rounded-full object-cover"

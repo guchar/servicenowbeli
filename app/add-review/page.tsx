@@ -131,7 +131,9 @@ export default function AddReviewPage() {
 
               <div className="flex items-center space-x-2">
                 <Checkbox id="share-chef" />
-                <Label htmlFor="share-chef">Share Directly with chef</Label>
+                <Label htmlFor="share-chef">
+                  Share To Our Catering and Workplace Services Team
+                </Label>
               </div>
 
               <Button

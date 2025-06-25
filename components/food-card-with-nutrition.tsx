@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
@@ -6,6 +8,16 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Star, ShoppingCart } from "lucide-react";
 import { FriendAvatars } from "@/components/friend-avatars";
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogFooter,
+  DialogClose,
+} from "@/components/ui/dialog";
+import { useCallback } from "react";
 
 interface NutritionalInfo {
   calories: number;
@@ -102,14 +114,52 @@ export function FoodCardWithNutrition({
         <div className="text-sm text-muted-foreground w-full">
           {reviews} {reviews === 1 ? "review" : "reviews"}
         </div>
-        <div className="w-full">
-          <Link href="https://cafeapp.servicenow.com" target="_blank">
+
+        <Dialog>
+          <DialogTrigger asChild>
             <Button className="w-full bg-[#0b7cce] hover:bg-[#0b7cce]/90">
               <ShoppingCart className="h-4 w-4 mr-2" />
               Order Now
             </Button>
-          </Link>
-        </div>
+          </DialogTrigger>
+
+          <DialogContent className="sm:max-w-md text-center">
+            <div className="flex flex-col items-center gap-4">
+              <Image
+                src="https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/46/0e/34/460e34a6-e2ef-9aeb-8901-cad0b39aa4b5/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/1200x630wa.png"
+                alt="Cafe BonApp Logo"
+                width={120}
+                height={120}
+                unoptimized
+                className="rounded-lg"
+              />
+
+              <DialogHeader>
+                <DialogTitle>
+                  Redirecting You To The Cafe BonApp app
+                </DialogTitle>
+              </DialogHeader>
+            </div>
+            <DialogFooter className="pt-4">
+              <DialogClose asChild>
+                <Button variant="outline" className="w-full sm:w-auto">
+                  Decline
+                </Button>
+              </DialogClose>
+
+              <DialogClose asChild>
+                <Button
+                  className="bg-[#0b7cce] hover:bg-[#0b7cce]/90 w-full sm:w-auto"
+                  onClick={() => {
+                    window.open("https://cafeapp.servicenow.com", "_blank");
+                  }}
+                >
+                  Accept
+                </Button>
+              </DialogClose>
+            </DialogFooter>
+          </DialogContent>
+        </Dialog>
       </CardFooter>
     </Card>
   );

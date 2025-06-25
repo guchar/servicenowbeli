@@ -165,7 +165,7 @@ export default function MapPage() {
                     </div>
 
                     {/* Building B - positioned at the building marker */}
-                    <div className="absolute top-[95%] left-[55%] transform -translate-x-1/2 -translate-y-1/2">
+                    <div className="absolute top-[82%] left-[55%] transform -translate-x-1/2 -translate-y-1/2">
                       <BuildingMarker
                         id="bldg-b"
                         label="Building B - Refreshment Corner"

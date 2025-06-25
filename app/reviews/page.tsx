@@ -186,7 +186,7 @@ export default function ReviewsPage() {
                     <div className="flex items-center space-x-2">
                       <Checkbox id="share-chef" />
                       <Label htmlFor="share-chef">
-                        Share Directly with chef
+                        Share To Our Catering and Workplace Services Team
                       </Label>
                     </div>
 
